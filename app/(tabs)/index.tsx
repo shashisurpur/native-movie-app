@@ -43,18 +43,10 @@ export default function Index() {
 
   return (
     <View className="flex-1 bg-primary">
-      <ImageBackground
+      <Image
         source={images.bg}
-        resizeMode="stretch"
+        resizeMode="cover"
         className="w-full h-full absolute z-0"
-        // style={{
-        //   resizeMode: "stretch",
-        //   flex: 1,
-        //   justifyContent: "center",
-        //   alignItems: "center",
-        //   width: "100%",
-        //   height: "100%",
-        // }}
       />
       <ScrollView
         showsVerticalScrollIndicator={false}
@@ -100,7 +92,7 @@ export default function Index() {
               </View>
             )}
 
-            <>
+            <View className="">
               <Text className="text-lg text-white mt-5 mb-3 font-bold">
                 Latest Movies
               </Text>
@@ -118,7 +110,7 @@ export default function Index() {
                 className="mt-2 pb-32"
                 scrollEnabled={false}
               />
-            </>
+            </View>
           </View>
         )}
       </ScrollView>
