@@ -19,7 +19,9 @@ const TrendingCard = ({
         <View className="bottom-9 absolute -left-3.5 px-2 py-1 rounded-full">
           <MaskedView
             maskElement={
-              <Text className="text-white font-bold text-6xl">{index + 1}</Text>
+              <Text className="text-white font-bold text-6xl ml-4">
+                {index + 1}
+              </Text>
             }
           >
             <Image
